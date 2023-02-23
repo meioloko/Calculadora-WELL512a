@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora WELL512a</title>
+	<script src="weln512a.js"></script> <!-- referência ao arquivo JavaScript -->
+      <script src="calculadora.js"></script> <!-- referência ao arquivo JavaScript que contém a lógica do cálculo -->
+</head>
+<body>
+	<h1>Calculadora WELL512a</h1>
+	<label for="seed-servidor">Semente do Servidor (hash):</label>
+	<input type="text" id="seed-servidor" name="seed-servidor"><br><br>
+	<label for="seed-cliente">Semente do Cliente:</label>
+	<input type="text" id="seed-cliente" name="seed-cliente"><br><br>
+	<label for="nonce">Nonce:</label>
+	<input type="text" id="nonce" name="nonce"><br><br>
+	<button onclick="calcular()">Calcular</button><br><br>
+	<label for="resultado">Resultado:</label>
+	<textarea id="resultado" name="resultado" rows="10" cols="50"></textarea>
+</body>
+</html>
